@@ -1,0 +1,14 @@
+import java.util.Scanner;
+
+public class stringReverse {
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter a sentence:");
+        String st = sc.nextLine();
+        String reverse = "";
+        for(int i=st.length()-1 ; i>=0 ; i--){
+            reverse += st.charAt(i);
+        }
+        System.out.print(reverse);
+    }
+}
